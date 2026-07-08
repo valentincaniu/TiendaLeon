@@ -221,9 +221,10 @@ main{
 }
 
 /* MAPAS */
-.mapa-img{
+.card img.mapa-img{
   width:100%;
   height:auto;
+  max-height:none;
   object-fit:contain;
   background-color:#fff;
   border-radius:12px;
