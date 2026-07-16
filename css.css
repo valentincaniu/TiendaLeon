@@ -68,8 +68,7 @@ nav a{
   transition:0.2s;
 }
 
-nav a:hover,
-.active{
+nav a:hover{
   background-color:var(--blue-100);
   color:var(--blue-500);
 }
