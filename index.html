@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
+<head> <!-- Contiene la configuración de la página. -->
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Tienda León | Ezeiza Connect Hub</title>
-
-    <link rel="stylesheet" href="css.css">
+    <meta charset="UTF-8"> <!-- Permite mostrar caracteres especiales correctamente. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que el sitio sea responsive. -->
+    <title>Tienda León | Ezeiza Connect Hub</title>  <!-- Título que aparece en la pestaña del navegador. -->
+    <link rel="stylesheet" href="css.css"> <!-- Vincula el archivo CSS del sitio. -->
 
 </head>
 
-<body>
+<body> <!-- Contiene todo el contenido visible de la página. -->
 
-<header>
+<header> <!-- Encabezado principal del sitio. -->
 
-    <h1>Ezeiza Connect Hub</h1>
+    <h1>Ezeiza Connect Hub</h1> <!-- Título principal del sitio. -->
 
-    <nav>
+    <nav> <!-- Menú de navegación principal. -->
 
-        <ul>
+        <ul> <!-- Lista que agrupa las opciones del menú. -->
 
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#servicio">Servicio</a></li>
-            <li><a href="#terminales">Terminales</a></li>
-            <li><a href="#mapas">Mapas</a></li>
-            <li><a href="#horarios">Horarios</a></li>
-            <li><a href="#accesibilidad">Accesibilidad</a></li>
+            <li><a href="#">Inicio</a></li> <!-- Enlace al inicio de la página, href="#" lleva arriba del sitio -->
+            <li><a href="#servicio">Servicio</a></li> <!-- Enlace interno a la sección "Servicio". -->
+            <li><a href="#terminales">Terminales</a></li> <!-- Enlace interno a "Terminales". -->
+            <li><a href="#mapas">Mapas</a></li> <!-- Enlace interno a "Mapas". -->
+            <li><a href="#horarios">Horarios</a></li> <!-- Enlace interno a "Horarios". -->
+            <li><a href="#accesibilidad">Accesibilidad</a></li> <!-- Enlace interno a "Accesibilidad". -->
 
         </ul>
 
@@ -35,52 +33,52 @@
 
 </header>
 
-<section id="hero" class="hero">
+<section id="hero" class="hero"> <!-- Sección principal de presentación (Hero). -->
 
-    <div class="hero-content">
+    <div class="hero-content"> <!-- Contenedor del contenido del Hero. -->
 
-        <h2>Tienda León</h2>
+        <h2>Tienda León</h2> <!-- Título de la sección principal. -->
 
-        <p>
+        <p> <!-- Párrafo descriptivo del servicio. -->
             Tienda León ofrece traslados rápidos y cómodos entre
             el Aeropuerto Internacional de Ezeiza, Aeroparque y
             el centro de la Ciudad de Buenos Aires mediante un
             servicio ejecutivo premium.
         </p>
 
-        <img src="imagenes/tiendaleon.jpg"
-             alt="Servicio Ejecutivo Tienda León"
-             class="hero-img">
+        <img src="imagenes/tiendaleon.jpg" alt="Servicio Ejecutivo Tienda León" class="hero-img">
+        <!-- Ruta de la imagen, Texto alternativo para accesibilidad, Clase utilizada para aplicar estilos CSS. -->
 
     </div>
 
 </section>
 
-<section class="status-panel-container">
+<section class="status-panel-container"> <!-- Contenedor del panel de estado. -->
 
-    <div class="status-panel">
+    <div class="status-panel"> <!-- Agrupa los indicadores del servicio. -->
 
-        <div class="status-item">
+        
+        <div class="status-item"> <!-- Primer indicador de estado. -->
 
-            <h4>Estado del Servicio</h4>
+            <h4>Estado del Servicio</h4> <!-- Título del indicador. -->
 
-            <p>Operando normalmente</p>
-
-        </div>
-
-        <div class="status-item">
-
-            <h4>Frecuencia</h4>
-
-            <p>Cada 1 hora</p>
+            <p>Operando normalmente</p> <!-- Estado actual del servicio. -->
 
         </div>
 
-        <div class="status-item">
+        <div class="status-item"> <!-- Segundo indicador. -->
 
-            <h4>Disponibilidad</h4>
+            <h4>Frecuencia</h4> <!-- Título del indicador. -->
 
-            <p>Todos los días de 04:00 a 00:00</p>
+            <p>Cada 1 hora</p> <!-- Frecuencia del servicio. -->
+
+        </div>
+
+        <div class="status-item"> <!-- Tercer indicador. -->
+
+            <h4>Disponibilidad</h4> <!-- Título del indicador. -->
+
+            <p>Todos los días de 04:00 a 00:00</p> <!-- Horario de funcionamiento. -->
 
         </div>
 
@@ -88,40 +86,40 @@
 
 </section>
 
-<main>
+<main> <!-- Contiene el contenido principal del sitio. -->
 
-<section id="servicio" class="section">
+<section id="servicio" class="section"> <!-- Sección de información del servicio. -->
 
-    <h2>Información del Servicio</h2>
+    <h2>Información del Servicio</h2> <!-- Título de la sección. -->
 
-    <div class="card">
+    <div class="card"> <!-- Tarjeta con información general. -->
 
         <p>
-            Tienda León es uno de los principales <strong>servicios ejecutivos
-            de transporte aeroportuario</strong> de Buenos Aires. Conecta el
+            Tienda León es uno de los principales <b>servicios ejecutivos
+            de transporte aeroportuario</b> de Buenos Aires. Conecta el
             Aeropuerto Internacional de Ezeiza con Aeroparque y Terminal
-            Pellegrini mediante <strong>unidades cómodas, modernas y equipadas
-            </strong> para pasajeros nacionales e internacionales.
+            Pellegrini mediante <b>unidades cómodas, modernas y equipadas
+            </b> para pasajeros nacionales e internacionales.
         </p>
         
         <p>Todos los recorridos son directos, sin paradas intermedias.</p>
         
-        <p>Los principales destinos del servicio son:</p>
+        <p>Los principales destinos del servicio son:</p> <!-- Introduce la lista de destinos. -->
 
-        <ul>
-            <li>Aeropuerto Jorge Newbery (Aeroparque)</li>
-            <li>Terminal Pellegrini - Ciudad de Buenos Aires</li>
+        <ul> <!-- Lista no ordenada de destinos. -->
+            <li>Aeropuerto Jorge Newbery (Aeroparque)</li> <!-- Primer destino. -->
+            <li>Terminal Pellegrini - Ciudad de Buenos Aires</li> <!-- Segundo destino. -->
         </ul>
 
     </div>
     
-    <div class="cards-grid">
+    <div class="cards-grid"> <!-- Contenedor de las tarjetas informativas. -->
 
-        <div class="card">
+        <div class="card"> <!-- Primera tarjeta. -->
 
-            <h3>Tecnología a Bordo</h3>
+            <h3>Tecnología a Bordo</h3> <!-- Título de la tarjeta. -->
 
-            <ul>
+            <ul> <!-- Lista no ordenada de características. -->
                 <li>Wi-Fi durante el viaje.</li>
                 <li>Seguimiento satelital en tiempo real.</li>
                 <li>Tecnología de asistencia a la conducción (ADAS).</li>
@@ -129,11 +127,11 @@
 
         </div>
 
-        <div class="card">
+        <div class="card"> <!-- Segunda tarjeta. -->
 
-            <h3>Seguridad</h3>
+            <h3>Seguridad</h3> <!-- Título de la tarjeta. -->
 
-            <ul>
+            <ul> <!-- Lista no ordenada de características. -->
                 <li>Centro de operaciones y logística 24/7.</li>
                 <li>Sistema de telemetría para gestión de flota.</li>
                 <li>Departamento de Seguridad Vial.</li>
@@ -141,9 +139,9 @@
 
         </div>
 
-        <div class="card">
+        <div class="card"> <!-- Tercera tarjeta. -->
 
-            <h3>Comfort</h3>
+            <h3>Comfort</h3> <!-- Título de la tarjeta. -->
 
             <p>
                 La flota está compuesta por unidades modernas,
@@ -157,18 +155,17 @@
 
 </section>
 
-<section id="terminales" class="section">
+<section id="terminales" class="section"> <!-- Sección de terminales y destinos. -->
 
-    <h2>Terminales y Destinos</h2>
+    <h2>Terminales y Destinos</h2> <!-- Título de la sección. -->
 
-    <div class="cards-grid">
+    <div class="cards-grid"> <!-- Contenedor de las tarjetas. -->
 
-        <div class="card">
+        <div class="card"> <!-- Primera tarjeta. -->
 
-            <img src="imagenes/ezeiza.jpg"
-                 alt="Aeropuerto Internacional Ezeiza">
+            <img src="imagenes/ezeiza.jpg" alt="Aeropuerto Internacional Ezeiza"> <!-- Ruta y Texto alternativo de la imagen. -->
 
-            <h3>Aeropuerto Internacional Ezeiza</h3>    
+            <h3>Aeropuerto Internacional Ezeiza</h3> <!-- Título de la tarjeta. --> 
 
             <p>
                 Punto principal de salida del servicio ejecutivo.
@@ -176,43 +173,41 @@
                 del aeropuerto.
             </p>
 
-            <p>Ubicacion:</p>
+            <p>Ubicacion:</p> <!-- Abre la ubicación en Google Maps en una nueva pestaña. -->
 
             <a href="https://maps.app.goo.gl/3HDihcveMCBd2cHBA" target="_blank">AU Tte. Gral. Pablo Riccheri Km 33,5, B1802 Ezeiza, Provincia de Buenos Aires, Argentina</a>
 
         </div>
 
-        <div class="card">
+        <div class="card"> <!-- Segunda tarjeta. -->
 
-            <img src="imagenes/aeroparque.jpg"
-                 alt="Aeroparque Jorge Newbery">
+            <img src="imagenes/aeroparque.jpg" alt="Aeroparque Jorge Newbery"> <!-- Ruta y Texto alternativo de la imagen. -->
 
-            <h3>Aeroparque Jorge Newbery</h3>
+            <h3>Aeroparque Jorge Newbery</h3> <!-- Título de la tarjeta. -->
 
             <p>
                 Destino directo para pasajeros con conexiones
                 nacionales dentro de la Ciudad de Buenos Aires.
             </p>
 
-            <p>Ubicacion:</p>
+            <p>Ubicacion:</p> <!-- Abre la ubicación en Google Maps en una nueva pestaña. -->
 
             <a href="https://maps.app.goo.gl/14UZ8YsFJiSViTcU9" target="_blank">Av. Costanera Rafael Obligado s/n, C1425 Cdad. Autónoma de Buenos Aires, Argentina</a>
 
         </div>
 
-        <div class="card">
+        <div class="card"> <!-- Tercera tarjeta. -->
 
-            <img src="imagenes/pellegrini.jpg"
-                 alt="Terminal Pellegrini">
+            <img src="imagenes/pellegrini.jpg" alt="Terminal Pellegrini"> <!-- Ruta y Texto alternativo de la imagen. -->
 
-            <h3>Terminal Pellegrini</h3>
+            <h3>Terminal Pellegrini</h3> <!-- Título de la tarjeta. -->
 
             <p>
                 Terminal ubicada en el centro porteño con conexión
                 rápida a subtes, taxis y hoteles de la ciudad.
             </p>
 
-            <p>Ubicacion:</p>
+            <p>Ubicacion:</p> <!-- Abre la ubicación en Google Maps en una nueva pestaña. -->
 
             <a href="https://maps.app.goo.gl/hiGtd1gdm82wyASZ9" target="_blank">Carlos Pellegrini 971, C1076 Cdad. Autónoma de Buenos Aires, Argentina</a>
 
@@ -222,15 +217,15 @@
 
 </section>
 
-<section id="mapas" class="section">
+<section id="mapas" class="section"> <!-- Sección de recorridos. -->
 
-    <h2>Mapas y Recorridos</h2>
+    <h2>Mapas y Recorridos</h2> <!-- Título de la sección. -->
 
-    <div class="cards-grid">
+    <div class="cards-grid"> <!-- Contenedor de las tarjetas. -->
 
-        <div class="card">
+        <div class="card"> <!-- Primera tarjeta. -->
 
-            <h3>Ezeiza → Aeroparque</h3>
+            <h3>Ezeiza → Aeroparque</h3> <!-- Título del recorrido. -->
 
             <p>
                 Recorrido directo por autopista entre
@@ -239,18 +234,16 @@
             </p>
 
             <p>
-                <strong>Tiempo de viaje:</strong> 1 hora 20 minutos
+                <b>Tiempo de viaje:</b> 1 hora 20 minutos
             </p>
             
-            <img src="imagenes/mapa1.jpg"
-                 alt="Recorrido Ezeiza Aeroparque"
-                 class="mapa-img">
-
+            <img src="imagenes/mapa1.jpg" alt="Recorrido Ezeiza Aeroparque" class="mapa-img">
+            <!-- Ruta de la imagen, Texto alternativo para accesibilidad, Clase utilizada para aplicar estilos CSS. -->
         </div>
 
-        <div class="card">
+        <div class="card"> <!-- Segunda tarjeta. -->
 
-            <h3>Ezeiza → Terminal Pellegrini</h3>
+            <h3>Ezeiza → Terminal Pellegrini</h3> <!-- Título del recorrido. -->
 
             <p>
                 Servicio directo hacia el centro de
@@ -259,51 +252,49 @@
             </p>
 
             <p>
-                <strong>Tiempo de viaje:</strong> 1 hora
+                <b>Tiempo de viaje:</b> 1 hora
             </p>
 
-            <img src="imagenes/mapa2.jpg"
-                 alt="Recorrido Ezeiza Terminal Pellegrini"
-                 class="mapa-img">
-
+            <img src="imagenes/mapa2.jpg" alt="Recorrido Ezeiza Terminal Pellegrini" class="mapa-img">
+            <!-- Ruta de la imagen, Texto alternativo para accesibilidad, Clase utilizada para aplicar estilos CSS. -->
         </div>
 
     </div>
 
 </section>
 
-<section id="horarios" class="section">
+<section id="horarios" class="section"> <!-- Sección de horarios del servicio. -->
 
-    <h2>Horarios del Servicio</h2>
+    <h2>Horarios del Servicio</h2> <!-- Título de la sección. -->
 
-    <div class="card">
+    <div class="card"> <!-- Tarjeta que contiene la tabla. -->
 
-        <table>
+        <table> <!-- Crea una tabla de datos. -->
 
-            <thead>
+            <thead> <!-- Encabezado de la tabla. -->
 
-                <tr>
+                <tr> <!-- Fila del encabezado. -->
 
-                    <th>Horario</th>
-                    <th>Frecuencia</th>
+                    <th>Horario</th> <!-- Encabezado de la primera columna. -->
+                    <th>Frecuencia</th> <!-- Encabezado de la segunda columna. -->
 
                 </tr>
 
             </thead>
 
-            <tbody>
+            <tbody> <!-- Cuerpo principal de la tabla. -->
 
-                <tr>
-                    <td>04:00 - 00:00 (Todos los dias)</td>
-                    <td>Cada 1 hora</td>
+                <tr> <!-- Fila de datos. -->
+                    <td>04:00 - 00:00 (Todos los dias)</td> <!-- Dato de la primera columna. -->
+                    <td>Cada 1 hora</td> <!-- Dato de la segunda columna. -->
                 </tr>
 
             </tbody>
 
         </table>
         
-            <p>
-                <strong>Recomendación:</strong>
+            <p> <!-- Recomendación para los pasajeros. -->
+                <b>Recomendación:</b>
                 Los pasajeros deberán presentarse 15 minutos antes de la
                 salida seleccionada para realizar el embarque con normalidad.
             </p>
@@ -312,35 +303,35 @@
 
 </section>
 
-<section id="tarifas" class="section">
+<section id="tarifas" class="section"> <!-- Sección de tarifas del servicio. -->
 
-    <h2>Tarifas</h2>
+    <h2>Tarifas</h2> <!-- Título de la sección. -->
 
-    <div class="card">
+    <div class="card"> <!-- Tarjeta informativa general. -->
 
         <p>
-            Unidades con capacidad para <strong>45 pasajeros</strong>, diseñadas 
+            Unidades con capacidad para <b>45 pasajeros</b>, diseñadas 
             para brindar un traslado cómodo y eficiente entre el Aeropuerto
             Internacional de Ezeiza, Aeroparque y la Terminal Pellegrini.
         </p>
 
         <p>
-            Ofrecen <strong>mayor espacio para pasajeros y equipaje</strong>,
+            Ofrecen <b>mayor espacio para pasajeros y equipaje</b>,
             adaptándose tanto a viajeros individuales como a grupos que necesitan
             realizar sus conexiones aeroportuarias con comodidad.
         </p>
 
     </div>
 
-    <div class="cards-grid">
+    <div class="cards-grid"> <!-- Contenedor de tarjetas de precios. -->
 
-        <div class="card">
+        <div class="card"> <!-- Primera tarifa. -->
 
-            <h3>Ezeiza → Aeroparque</h3>
+            <h3>Ezeiza → Aeroparque</h3> <!-- Destino del recorrido. -->
 
-            <p><strong>Precio:</strong> $16.000 por persona</p>
+            <p><b>Precio:</b> $16.000 por persona</p>
 
-            <p><strong>Tiempo estimado:</strong> 1h 20min</p>
+            <p><b>Tiempo estimado:</b> 1h 20min</p>
 
             <p>
                 Incluye 1 valija de hasta 23kg y
@@ -349,13 +340,13 @@
 
         </div>
 
-        <div class="card">
+        <div class="card"> <!-- Segunda tarifa. -->
 
-            <h3>Ezeiza → Terminal Pellegrini</h3>
+            <h3>Ezeiza → Terminal Pellegrini</h3> <!-- Destino del recorrido. -->
 
-            <p><strong>Precio:</strong> $15.500 por persona</p>
+            <p><b>Precio:</b> $15.500 por persona</p>
 
-            <p><strong>Tiempo estimado:</strong> 1 hora</p>
+            <p><b>Tiempo estimado:</b> 1 hora</p>
 
             <p>
                 Incluye 1 valija de hasta 23kg y
@@ -368,15 +359,15 @@
 
 </section>
 
-<section class="section">
+<section class="section"> <!-- Sección de información para pasajeros. -->
 
-    <h2>Información para Pasajeros</h2>
+    <h2>Información para Pasajeros</h2> <!-- Título de la sección. -->
 
-    <div class="cards-grid">
+    <div class="cards-grid"> <!-- Contenedor de las tarjetas. -->
 
-        <div class="card">
+        <div class="card"> <!-- Primera tarjeta. -->
 
-            <h3>Equipaje</h3>
+            <h3>Equipaje</h3> <!-- Título de la tarjeta. -->
 
             <p>
                 Cada pasajero puede transportar una valija de hasta
@@ -386,9 +377,9 @@
 
         </div>
 
-        <div class="card">
+        <div class="card"> <!-- Segunda tarjeta. -->
 
-            <h3>Reservas y Cambios</h3>
+            <h3>Reservas y Cambios</h3> <!-- Título de la tarjeta. -->
 
             <p>
                 Los pasajes pueden adquirirse previamente y, para
@@ -399,9 +390,9 @@
 
         </div>
 
-        <div class="card">
+        <div class="card"> <!-- Tercera tarjeta. -->
 
-            <h3>Medios de Pago</h3>
+            <h3>Medios de Pago</h3> <!-- Título de la tarjeta. -->
 
             <p>
                 Se aceptan tarjetas de débito y crédito, Mercado Pago,
@@ -414,71 +405,71 @@
 
 </section>
 
-<section id="accesibilidad" class="section">
+<section id="accesibilidad" class="section"> <!-- Sección de accesibilidad. -->
 
-    <h2>Características de Accesibilidad</h2>
+    <h2>Características de Accesibilidad</h2> <!-- Título de la sección. -->
 
-    <div class="cards-grid">
+    <div class="cards-grid"> <!-- Contenedor de las tarjetas. -->
 
-        <div class="card">
+        <div class="card"> <!-- Primera tarjeta. -->
 
-            <h3>Movilidad Reducida</h3>
+            <h3>Movilidad Reducida</h3> <!-- Título de la tarjeta. -->
 
             <p>
-                Las unidades adaptadas cuentan con <strong>rampas y 
-                elevadores</strong> para facilitar el ascenso y descenso
+                Las unidades adaptadas cuentan con <b>rampas y 
+                elevadores</b> para facilitar el ascenso y descenso
                 de pasajeros en silla de ruedas. Además, disponen de
-                espacios específicos con <strong>sistemas de sujeción
-                y seguridad</strong>.
+                espacios específicos con <b>sistemas de sujeción
+                y seguridad</b>.
             </p>
 
         </div>
 
-        <div class="card">
+        <div class="card"> <!-- Segunda tarjeta. -->
 
-            <h3>Asistencia durante el viaje</h3>
+            <h3>Asistencia durante el viaje</h3> <!-- Título de la tarjeta. -->
 
             <p>
-                El personal de la empresa está <strong>capacitado</strong>
+                El personal de la empresa está <b>capacitado</b>
                 para brindar asistencia al momento de subir y bajar del vehículo,
-                además de <strong>colaborar con el manejo del equipaje</strong>
+                además de <b>colaborar con el manejo del equipaje</b>
                 cuando sea necesario.
             </p>
 
         </div>
 
-        <div class="card">
+        <div class="card"> <!-- Tercera tarjeta. -->
 
-            <h3>Terminales Accesibles</h3>
+            <h3>Terminales Accesibles</h3> <!-- Título de la tarjeta. -->
 
             <p>
                 Las principales terminales del servicio cuentan con
-                <strong>espacios amplios, zonas de espera y accesos
-                adaptados</strong>. En Ezeiza y Aeroparque las paradas
+                <b>espacios amplios, zonas de espera y accesos
+                adaptados</b>. En Ezeiza y Aeroparque las paradas
                 se encuentran a pocos metros de las puertas de arribos.
             </p>
 
         </div>
 
-        <div class="card">
+        <div class="card"> <!-- Cuarta tarjeta. -->
 
-            <h3>Mascotas y Asistencia Especial</h3>
+            <h3>Mascotas y Asistencia Especial</h3> <!-- Título de la tarjeta. -->
 
             <p>
-                Los <strong>pasajeros con certificado</strong> de mascota
+                Los <b>pasajeros con certificado</b> de mascota
                 de apoyo emocional o perro guía pueden acceder al servicio
-                según las políticas de la empresa. Las <strong>mascotas
-                convencionales</strong> deben viajar en canil dentro de la bodega.
+                según las políticas de la empresa. Las <b>mascotas
+                convencionales</b> deben viajar en canil dentro de la bodega.
             </p>
 
         </div>
 
-        <div class="card">
+        <div class="card"> <!-- Quinta tarjeta. -->
 
-            <h3>Canales de Atención</h3>
+            <h3>Canales de Atención</h3> <!-- Título de la tarjeta. -->
 
             <p>
-                La empresa ofrece <strong>atención personalizada</strong>
+                La empresa ofrece <b>atención personalizada</b>
                 mediante canales como WhatsApp, Telegram, formulario web
                 y atención presencial en terminales y aeropuertos.
             </p>
@@ -491,11 +482,11 @@
 
 </main>
 
-<footer>
+<footer> <!-- Pie de página. -->
 
-    <p>© 2026 Ezeiza Connect Hub</p>
+    <p>© 2026 Ezeiza Connect Hub</p> <!-- Información de derechos de autor. -->
 
-    <p>Proyecto desarrollado por Sky Consulting</p>
+    <p>Proyecto desarrollado por Sky Consulting</p> <!-- Créditos del proyecto. -->
 
 </footer>
 
