@@ -1,320 +1,311 @@
 /* RESET */
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+*{ /* Selecciona todos los elementos. */
+  margin:0; /* Elimina el margen por defecto. */
+  padding:0; /* Elimina el relleno por defecto. */
+  box-sizing:border-box; /* Incluye borde y padding en el tamaño. */
 }
 
 /* VARIABLES */
-:root{
-  --blue-100:#d9efff;
-  --blue-500:#0077cc;
-  --blue-900:#061a2b;
-  --surface:#ffffff;
-  --text:#061a2b;
-  --text-soft:#4b6075;
-  --stroke:rgba(6,26,43,0.12);
-  --shadow-sm:0 8px 18px rgba(6,26,43,0.10);
-  --shadow-md:0 18px 40px rgba(6,26,43,0.15);
-  --radius:18px;
+:root{ /* Define variables globales. */
+  --blue-100:#d9efff; /* Azul claro. */
+  --blue-500:#0077cc; /* Azul principal. */
+  --blue-900:#061a2b; /* Azul oscuro. */
+  --surface:#ffffff; /* Color de las tarjetas. */
+  --text:#061a2b; /* Color principal del texto. */
+  --text-soft:#4b6075; /* Color para texto secundario. */
+  --stroke:rgba(6,26,43,0.12); /* Color de bordes. */
+  --shadow-sm:0 8px 18px rgba(6,26,43,0.10); /* Sombra pequeña. */
+  --shadow-md:0 18px 40px rgba(6,26,43,0.15); /* Sombra mediana. */
+  --radius:18px; /* Radio de bordes. */
 }
 
 /* BODY */
-body{
-  font-family:"Segoe UI","Verdana",sans-serif;
-  background:linear-gradient(160deg,#ffffff 0%,#eef7ff 50%,#d9efff 100%);
-  color:var(--text);
-  line-height:1.5;
-  min-height:100vh;
-  display:flex;
-  flex-direction:column;
+body{ /* Estilos generales de la página. */
+  font-family:"Segoe UI","Verdana",sans-serif; /* Fuente principal. */
+  background:linear-gradient(160deg,#ffffff 0%,#eef7ff 50%,#d9efff 100%); /* Fondo degradado. */
+  color:var(--text); /* Color del texto. */
+  line-height:1.5; /* Espaciado entre líneas. */
+  min-height:100vh; /* Altura mínima de toda la ventana. */
+  display:flex; /* Activa Flexbox. */
+  flex-direction:column; /* Ordena los elementos en columna. */
 }
 
 /* HEADER */
-header{
-  background-color:rgba(255,255,255,0.95);
-  border-bottom:1px solid var(--stroke);
-  padding:18px 28px;
-  position:sticky;
-  top:0;
-  z-index:10;
-  backdrop-filter:blur(8px);
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  flex-wrap:wrap;
+header{ /* Encabezado del sitio. */
+  background-color:rgba(255,255,255,0.95); /* Fondo semitransparente. */
+  border-bottom:1px solid var(--stroke); /* Agrega borde inferior. */
+  padding:18px 28px; /* Espaciado interno. */
+  position:sticky; /* Mantiene el header visible. */
+  top:0; /* Lo fija en la parte superior. */
+  z-index:10; /* Lo coloca sobre otros elementos. */
+  backdrop-filter:blur(8px); /* Aplica desenfoque al fondo. */
+  display:flex; /* Activa Flexbox. */
+  justify-content:space-between; /* Separa los elementos horizontalmente. */
+  align-items:center; /* Centra verticalmente los elementos. */
+  flex-wrap:wrap; /* Permite que bajen de línea. */
 }
 
-header h1{
-  margin:0;
-  font-size:1.9rem;
-  color:var(--blue-500);
+header h1{ /* Estilos del título principal. */
+  margin:0; /* Elimina el margen. */
+  font-size:1.9rem; /* Tamaño del título. */
+  color:var(--blue-500); /* Color del título. */
 }
 
 /* NAV */
-nav ul{
-  list-style:none;
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
+nav ul{ /* Lista del menú. */
+  list-style:none; /* Elimina los puntos. */
+  display:flex; /* Coloca los elementos en fila. */
+  flex-wrap:wrap; /* Permite varias líneas. */
+  gap:10px; /* Espacio entre elementos. */
 }
 
-nav a{
-  text-decoration:none;
-  color:var(--text-soft);
-  font-weight:700;
-  padding:8px 14px;
-  border-radius:999px;
-  transition:0.2s;
+nav a{ /* Enlaces del menú. */
+  text-decoration:none; /* Quita el subrayado. */
+  color:var(--text-soft); /* Color del enlace. */
+  font-weight:700; /* Texto en negrita. */
+  padding:8px 14px; /* Espaciado interno. */
+  border-radius:999px; /* Bordes totalmente redondeados. */
+  transition:0.2s; /* Suaviza las transiciones. */
 }
 
-nav a:hover{
-  background-color:var(--blue-100);
-  color:var(--blue-500);
+nav a:hover{ /* Al pasar el mouse. */
+  background-color:var(--blue-100); /* Cambia el fondo. */
+  color:var(--blue-500); /* Cambia el color del texto. */
 }
 
 /* HERO */
-.hero{
-  width:100%;
-  max-width:1100px;
-  margin:32px auto 24px;
-  background-color:var(--surface);
-  border-radius:var(--radius);
-  padding:24px;
-  border:1px solid var(--stroke);
-  box-shadow:var(--shadow-md);
-  text-align:center;
+.hero{ /* Contenedor principal del Hero. */
+  width:100%; /* Ocupa todo el ancho disponible. */
+  max-width:1100px; /* Limita el ancho máximo. */
+  margin:32px auto 24px; /* Centra y agrega márgenes. */
+  background-color:var(--surface); /* Fondo blanco. */
+  border-radius:var(--radius); /* Bordes redondeados. */
+  padding:24px; /* Espaciado interno. */
+  border:1px solid var(--stroke); /* Agrega un borde. */
+  box-shadow:var(--shadow-md); /* Agrega una sombra. */
+  text-align:center; /* Centra el contenido. */
 }
 
-.hero-content{
-  max-width:900px;
-  margin:auto;
+.hero-content{ /* Contenedor interno del Hero. */
+  max-width:900px; /* Limita el ancho del contenido. */
+  margin:auto; /* Centra el contenedor. */
 }
 
-.hero h2{
-  margin-top:0;
-  margin-bottom:18px;
-  color:var(--blue-500);
-  font-size:2.5rem;
+.hero h2{ /* Título del Hero. */
+  margin-top:0; /* Elimina el margen superior. */
+  margin-bottom:18px; /* Agrega espacio inferior. */
+  color:var(--blue-500); /* Color del título. */
+  font-size:2.5rem; /* Tamaño del título. */
 }
 
-.hero p{
-  color:var(--text-soft);
-  margin-bottom:28px;
+.hero p{ /* Párrafo del Hero. */
+  color:var(--text-soft); /* Color del texto. */
+  margin-bottom:28px; /* Espacio debajo del texto. */
 }
 
-.hero-img{
-  width:100%;
-  max-height:340px;
-  object-fit:cover;
-  border-radius:var(--radius);
-  box-shadow:var(--shadow-md);
+.hero-img{ /* Imagen principal del Hero. */
+  width:100%; /* Ocupa todo el ancho disponible. */
+  max-height:340px; /* Limita la altura máxima. */
+  object-fit:cover; /* Recorta la imagen sin deformarla. */
+  border-radius:var(--radius); /* Bordes redondeados. */
+  box-shadow:var(--shadow-md); /* Agrega una sombra. */
 }
 
 /* STATUS PANEL */
-.status-panel-container{
-  width:100%;
-  max-width:1100px;
-  margin:0 auto 24px;
-  padding:0 24px;
+.status-panel-container{ /* Contenedor del panel de estado. */
+  width:100%; /* Ocupa todo el ancho disponible. */
+  max-width:1100px; /* Limita el ancho máximo. */
+  margin:0 auto 24px; /* Centra el contenedor y agrega margen inferior. */
 }
 
-.status-panel{
-  background-color:var(--surface);
-  border-radius:var(--radius);
-  border:1px solid var(--stroke);
-  box-shadow:var(--shadow-sm);
-  padding:24px;
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:18px;
+.status-panel{ /* Panel que contiene los estados. */
+  background-color:var(--surface); /* Fondo blanco. */
+  border-radius:var(--radius); /* Bordes redondeados. */
+  border:1px solid var(--stroke); /* Agrega un borde. */
+  box-shadow:var(--shadow-sm); /* Agrega una sombra. */
+  padding:24px; /* Espaciado interno. */
+  display:grid; /* Activa CSS Grid. */
+  grid-template-columns:repeat(3,1fr); /* Crea tres columnas iguales. */
+  gap:18px; /* Espacio entre columnas. */
 }
 
-.status-item{
-  text-align:center;
+.status-item{ /* Cada bloque de información. */
+  text-align:center; /* Centra el contenido. */
 }
 
-.status-item h4{
-  color:var(--text-soft);
-  margin-bottom:8px;
+.status-item h4{ /* Título del estado. */
+  color:var(--text-soft); /* Color del título. */
+  margin-bottom:8px; /* Espacio debajo del título. */
 }
 
-.status-item p{
-  font-weight:700;
+.status-item p{ /* Texto del estado. */
+  font-weight:bold; /* Texto en negrita. */
 }
 
 /* MAIN */
-main{
-  width:100%;
-  max-width:1100px;
-  margin:0 auto;
-  padding:0 24px 56px;
-  flex:1;
+main{ /* Contenido principal. */
+  width:100%; /* Ocupa todo el ancho disponible. */
+  max-width:1100px; /* Limita el ancho máximo. */
+  margin:0 auto; /* Centra el contenido. */
+  padding:0 24px 56px; /* Agrega espacio interno. */
+  flex:1; /* Ocupa el espacio restante del body. */
 }
 
 /* SECTIONS */
-.section{
-  scroll-margin-top:120px;
-  margin-bottom:24px;
+.section{ /* Estilos generales de las secciones. */
+  scroll-margin-top:120px; /* Evita que el header tape la sección al navegar. */
+  margin-bottom:60px; /* Espacio entre secciones. */
 }
 
-.section h2{
-  margin-bottom:22px;
-  color:var(--blue-500);
-  font-size:2rem;
-  text-align:center;
+.section h2{ /* Títulos de las secciones. */
+  margin-bottom:22px; /* Espacio inferior. */
+  color:var(--blue-500); /* Color azul. */
+  font-size:2rem; /* Tamaño del título. */
+  text-align:center; /* Centra el texto. */
 }
 
 /* GRID */
-.cards-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:18px;
+.cards-grid{ /* Contenedor de tarjetas. */
+  display:grid; /* Activa CSS Grid. */
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); /* Crea columnas adaptables. */
+  gap:18px; /* Espacio entre tarjetas. */
 }
 
-#servicio .cards-grid{
-  margin-top:20px;
-}
-
-#tarifas .cards-grid{
-  margin-top:20px;
+#servicio .cards-grid,
+#tarifas .cards-grid{ /* Grid de estas dos secciones. */
+  margin-top:20px; /* Separa las tarjetas del contenido superior. */
 }
 
 /* CARD */
-.card{
-  background-color:var(--surface);
-  border-radius:var(--radius);
-  padding:20px;
-  border:1px solid var(--stroke);
-  box-shadow:var(--shadow-sm);
-  transition:0.2s;
+.card{ /* Tarjeta individual. */
+  background-color:var(--surface); /* Fondo blanco. */
+  border-radius:var(--radius); /* Bordes redondeados. */
+  padding:20px; /* Espaciado interno. */
+  border:1px solid var(--stroke); /* Agrega un borde. */
+  box-shadow:var(--shadow-sm); /* Agrega una sombra. */
+  transition:.2s; /* Suaviza las animaciones. */
 }
 
-.card:hover{
-  transform:translateY(-4px);
-  box-shadow:var(--shadow-md);
+.card:hover{ /* Al pasar el mouse. */
+  transform:translateY(-4px); /* Eleva la tarjeta. */
+  box-shadow:var(--shadow-md); /* Aumenta la sombra. */
 }
 
-.card h3{
-  margin-top:0;
-  margin-bottom:12px;
+.card h3{ /* Título de la tarjeta. */
+  margin-top:0; /* Elimina el margen superior. */
+  margin-bottom:12px; /* Agrega espacio inferior. */
 }
 
-.card p{
-  color:var(--text-soft);
-  margin-bottom:12px;
+.card p{ /* Párrafos de la tarjeta. */
+  color:var(--text-soft); /* Color del texto. */
+  margin-bottom:12px; /* Espacio inferior. */
 }
 
-.card ul{
-  margin-left:20px;
-  color:var(--text-soft);
+.card ul{ /* Lista de la tarjeta. */
+  margin-left:20px; /* Agrega sangría. */
+  color:var(--text-soft); /* Color del texto. */
 }
 
 /* IMAGENES */
 .card img{
-  width:100%;
-  height:140px;
-  object-fit:cover;
-  border-radius:12px;
-  margin-bottom:12px;
+  width:100%; /* Ocupa todo el ancho de la tarjeta. */
+  height:140px; /* Define una altura fija. */
+  object-fit:cover; /* Recorta la imagen sin deformarla. */
+  border-radius:12px; /* Redondea los bordes. */
+  margin-bottom:12px; /* Agrega espacio debajo de la imagen. */
 }
 
 /* MAPAS */
 .card img.mapa-img{
-  width:100%;
-  height:auto;
-  max-height:none;
-  object-fit:contain;
-  background-color:#fff;
-  border-radius:12px;
-  margin-bottom:12px;
+  width:100%; /* Ocupa todo el ancho disponible. */
+  height:auto; /* Mantiene la proporción original. */
+  object-fit:contain; /* Muestra la imagen completa sin recortarla. */
+  background-color:#fff; /* Agrega un fondo blanco. */
+  border-radius:12px; /* Redondea los bordes. */
+  margin-bottom:12px; /* Agrega espacio inferior. */
 }
 
 /* TABLE */
 table{
-  width:100%;
-  border-collapse:collapse;
-  overflow:hidden;
-  border-radius:12px;
+  width:100%; /* La tabla ocupa todo el ancho. */
+  border-collapse:collapse; /* Une los bordes de las celdas. */
+  overflow:hidden; /* Oculta contenido que sobresale. */
+  border-radius:12px; /* Redondea los bordes. */
 }
 
 th{
-  background-color:var(--blue-500);
-  color:white;
-  padding:14px;
-  font-size:0.95rem;
+  background-color:var(--blue-500); /* Fondo azul para encabezados. */
+  color:white; /* Texto blanco. */
+  padding:14px; /* Espaciado interno. */
+  font-size:0.95rem; /* Tamaño del texto. */
 }
 
 td{
-  padding:14px;
-  border-bottom:1px solid #dce7f0;
-  text-align:center;
-  color:var(--text-soft);
-  background-color:var(--surface);
+  padding:14px; /* Espaciado interno. */
+  border-bottom:1px solid #dce7f0; /* Línea separadora inferior. */
+  text-align:center; /* Centra el contenido. */
+  color:var(--text-soft); /* Color del texto. */
+  background-color:var(--surface); /* Fondo blanco. */
 }
 
 tr:hover td{
-  background-color:#f2f8ff;
+  background-color:#f2f8ff; /* Cambia el fondo al pasar el mouse. */
 }
 
 #horarios .card p{
-  margin-top:30px;
+  margin-top:30px; /* Separa el texto de la tabla. */
+  text-align: center; /* Centra el contenido. */
 }
 
 /* FOOTER */
 footer{
-  background-color:var(--blue-900);
-  color:white;
-  text-align:center;
-  padding:18px;
-  margin-top:auto;
+  background-color:var(--blue-900); /* Fondo azul oscuro. */
+  color:white; /* Texto blanco. */
+  text-align:center; /* Centra el contenido. */
+  padding:18px; /* Espaciado interno. */
+  margin-top:auto; /* Lo mantiene al final de la página. */
 }
 
 /* RESPONSIVE */
-@media (max-width:700px){
+@media (max-width:700px){ /* Aplica estos estilos en pantallas de 700 px o menos. */
 
   header{
-    flex-direction:column;
-    align-items:center;
+    flex-direction:column; /* Coloca los elementos uno debajo del otro. */
+    align-items:center; /* Centra los elementos horizontalmente. */
   }
 
   nav ul{
-    flex-direction:column;
-    align-items:center;
+    flex-direction:column; /* Muestra el menú en columna. */
+    align-items:center; /* Centra las opciones del menú. */
   }
 
   main{
-    padding:16px;
+    padding:16px; /* Reduce el espacio interno del contenido. */
   }
 
   .hero{
-    margin:16px;
-    padding:20px;
+    margin:24px 0; /* Reduce los márgenes exteriores. */
+    padding:16px; /* Reduce el espacio interno. */
   }
 
   .hero h2{
-    font-size:2rem;
+    font-size:2rem; /* Disminuye el tamaño del título. */
   }
 
   .status-panel{
-    grid-template-columns:1fr;
+    grid-template-columns:1fr; /* Convierte las tres columnas en una sola. */
   }
 
   .cards-grid{
-    grid-template-columns:1fr;
+    grid-template-columns:1fr; /* Muestra una tarjeta por fila. */
   }
 
   header h1{
-    font-size:1.6rem;
+    font-size:1.6rem; /* Reduce el tamaño del título principal. */
   }
 
   .card img{
-    height:160px;
-  }
-
-  table{
-    display:block;
-    overflow-x:auto;
+    height:160px; /* Ajusta la altura de las imágenes. */
   }
 
 }
