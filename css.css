@@ -77,7 +77,7 @@ nav a:hover{ /* Al pasar el mouse. */
 .hero{ /* Contenedor principal del Hero. */
   width:100%; /* Ocupa todo el ancho disponible. */
   max-width:1100px; /* Limita el ancho máximo. */
-  margin:32px auto 24px; /* Centra y agrega márgenes. */
+  margin:24px auto 24px; /* Centra y agrega márgenes. */
   background-color:var(--surface); /* Fondo blanco. */
   border-radius:var(--radius); /* Bordes redondeados. */
   padding:24px; /* Espaciado interno. */
@@ -272,15 +272,27 @@ footer{
   header{
     flex-direction:column; /* Coloca los elementos uno debajo del otro. */
     align-items:center; /* Centra los elementos horizontalmente. */
+    padding:12px 16px;
   }
 
   nav ul{
-    flex-direction:column; /* Muestra el menú en columna. */
-    align-items:center; /* Centra las opciones del menú. */
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:6px;
+  }
+
+  nav a{
+    padding:4px 10px;
   }
 
   main{
     padding:16px; /* Reduce el espacio interno del contenido. */
+  }
+
+  .section{
+    scroll-margin-top:150px;
   }
 
   .hero{
@@ -301,7 +313,8 @@ footer{
   }
 
   header h1{
-    font-size:1.6rem; /* Reduce el tamaño del título principal. */
+    font-size:1.5rem; /* Reduce el tamaño del título principal. */
+    margin-bottom:8px;
   }
 
   .card img{
